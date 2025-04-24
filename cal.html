@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <title>calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="input">
+            <input type="text" id="txt" disabled>
+        </div>
+        <div class="main2">
+            <div class="grid">
+                <div class="clear"><button class="btn_row1 btn clr">clear</button></div>
+                <div class="cut"><button class="btn_row1 btn cut_1">del</button></div>
+                <div class="devide"><button class="btn_row1 btn">/</button></div>
+                <div class="multiply"><button class="btn_row1 btn">*</button></div>
+                <div class="btn7"><button class="btn_row2 btn">7</button></div>
+                <div class="btn8"><button class="btn_row2 btn">8</button></div>
+                <div class="btn9"><button class="btn_row2 btn">9</button></div>
+                <div class="sub"><button class="btn_row2 btn color">-</button></div>
+                <div class="btn4"><button class="btn_row3 btn">4</button></div>
+                <div class="btn5"><button class="btn_row3 btn">5</button></div>
+                <div class="btn6"><button class="btn_row3 btn">6</button></div>
+                <div class="add"><button class="btn_row3 btn color">+</button></div>
+
+                <div class="btn1"><button class="btn_row4 btn">1</button></div>
+                <div class="btn2"><button class="btn_row4 btn">2</button></div>
+                <div class="btn3"><button class="btn_row4 btn">3</button></div>
+                <div class="equal"><button class="btn_eqal btn color2">=</button></div>
+                <div class="btn0"><button class="btn_0 btn">0</button></div>
+                <div class="dot"><button class="btn_dot btn">.</button></div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        let button=document.querySelectorAll(".btn")
+        console.log(button)
+        for(let i=0; i < button.length; i++){
+           button[i].onclick=function(){
+            let v=button[i].innerHTML
+            console.log(v)
+            document.querySelector("#txt").value+=v
+           } 
+        
+        };
+        let solve=document.querySelector(".btn_eqal");
+        solve.onclick=function(){
+           let eq=document.querySelector("#txt").value;
+        let new_solve=eval(eq)
+        document.querySelector("#txt").value=new_solve
+        }
+        let clear=document.querySelector(".clr");
+        clear.onclick=function(){
+        
+        document.querySelector("#txt").value=" "
+        }
+        let cut=document.querySelector(".cut_1")
+        cut.onclick=function(){
+            let currentValue = document.querySelector("#txt").value;
+            document.querySelector("#txt").value = currentValue.slice(0, -1);
+        }
+        </script> -->
+        <script src="cal.js"></script>
+</body>
+
+</html>
